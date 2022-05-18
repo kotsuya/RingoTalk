@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F11103805A2703D1F7CB224 /* Pods_RingoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6565C6BEF6221D8DDA00240C /* Pods_RingoTalk.framework */; };
+		9E14A362282A4A7D002918D8 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E14A361282A4A7D002918D8 /* UserListViewController.swift */; };
+		9E51E113282A09C900D8D14B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51E112282A09C900D8D14B /* UIView+Extension.swift */; };
+		9E51E115282A09E700D8D14B /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51E114282A09E700D8D14B /* Notification+Extension.swift */; };
+		9E51E117282A105B00D8D14B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51E116282A105B00D8D14B /* SignUpViewController.swift */; };
+		9E61E6E8282B7F7A0004A49C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E61E6E7282B7F7A0004A49C /* LocationViewController.swift */; };
+		9E61E6EF282BB68C0004A49C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E61E6EE282BB68C0004A49C /* UIViewController+Extension.swift */; };
+		9E61E6F3282BDE5B0004A49C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E61E6F2282BDE5A0004A49C /* LoginViewController.swift */; };
+		9EC1A4022829E36D00F22133 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1A4012829E36D00F22133 /* Chat.storyboard */; };
+		9EC1A4042829E3AA00F22133 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1A4032829E3AA00F22133 /* ChatListViewController.swift */; };
+		9EC1A4062829E9FE00F22133 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1A4052829E9FE00F22133 /* UIColor+Extension.swift */; };
+		9EC1A4082829EED700F22133 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1A4072829EED700F22133 /* ChatRoomViewController.swift */; };
+		9ECF934F2832782A00F75134 /* FMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93482832782900F75134 /* FMessageListener.swift */; };
+		9ECF93512832782A00F75134 /* FTypingListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF934A2832782900F75134 /* FTypingListener.swift */; };
+		9ECF93522832782A00F75134 /* FUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF934B2832782900F75134 /* FUserListener.swift */; };
+		9ECF93532832782A00F75134 /* FChatRoomListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF934C2832782900F75134 /* FChatRoomListener.swift */; };
+		9ECF93542832782A00F75134 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF934D2832782A00F75134 /* FCollectionReference.swift */; };
+		9ECF93552832782A00F75134 /* FireStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF934E2832782A00F75134 /* FireStorage.swift */; };
+		9ECF935D283279AE00F75134 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9359283279AE00F75134 /* Constants.swift */; };
+		9ECF935E283279AE00F75134 /* StartChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF935A283279AE00F75134 /* StartChat.swift */; };
+		9ECF9360283279AE00F75134 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF935C283279AE00F75134 /* GlobalFunction.swift */; };
+		9ECF939A283289D200F75134 /* AudioMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9387283289CF00F75134 /* AudioMessage.swift */; };
+		9ECF939B283289D200F75134 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9388283289CF00F75134 /* RealmManager.swift */; };
+		9ECF939C283289D200F75134 /* LocationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9389283289D000F75134 /* LocationMessage.swift */; };
+		9ECF939D283289D200F75134 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938A283289D000F75134 /* AudioRecorder.swift */; };
+		9ECF939E283289D200F75134 /* PhotoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938B283289D000F75134 /* PhotoMessage.swift */; };
+		9ECF939F283289D200F75134 /* Outgoing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938C283289D000F75134 /* Outgoing.swift */; };
+		9ECF93A0283289D200F75134 /* VideoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938D283289D000F75134 /* VideoMessage.swift */; };
+		9ECF93A1283289D200F75134 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938E283289D000F75134 /* LocationManager.swift */; };
+		9ECF93A2283289D200F75134 /* BasicAudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF938F283289D000F75134 /* BasicAudioController.swift */; };
+		9ECF93A3283289D200F75134 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9390283289D100F75134 /* User.swift */; };
+		9ECF93A4283289D200F75134 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9391283289D100F75134 /* PushNotificationSender.swift */; };
+		9ECF93A5283289D200F75134 /* MKSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9392283289D100F75134 /* MKSender.swift */; };
+		9ECF93A6283289D200F75134 /* LocalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9393283289D100F75134 /* LocalMessage.swift */; };
+		9ECF93A7283289D200F75134 /* MKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9394283289D100F75134 /* MKMessage.swift */; };
+		9ECF93A8283289D200F75134 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9395283289D100F75134 /* PushNotificationManager.swift */; };
+		9ECF93A9283289D200F75134 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9396283289D100F75134 /* MapAnnotation.swift */; };
+		9ECF93AA283289D200F75134 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9397283289D200F75134 /* ChatRoom.swift */; };
+		9ECF93AB283289D200F75134 /* Incoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9398283289D200F75134 /* Incoming.swift */; };
+		9ECF93AC283289D200F75134 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF9399283289D200F75134 /* Channel.swift */; };
+		9ECF93AE2832946F00F75134 /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93AD2832946F00F75134 /* ChatListTableViewCell.swift */; };
+		9ECF93B5283296C300F75134 /* MessagessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93B0283296C300F75134 /* MessagessDataSource.swift */; };
+		9ECF93B6283296C400F75134 /* MessageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93B1283296C300F75134 /* MessageCellDelegate.swift */; };
+		9ECF93B7283296C400F75134 /* MessagesDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93B2283296C300F75134 /* MessagesDisplayDelegate.swift */; };
+		9ECF93B8283296C400F75134 /* InputBarAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93B3283296C300F75134 /* InputBarAccessoryViewDelegate.swift */; };
+		9ECF93B9283296C400F75134 /* MessagesLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93B4283296C300F75134 /* MessagesLayoutDelegate.swift */; };
+		9ECF93BB28329D6300F75134 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF93BA28329D6300F75134 /* UserListTableViewCell.swift */; };
+		9ED130312824765F00EB99C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED130302824765F00EB99C7 /* AppDelegate.swift */; };
+		9ED130332824765F00EB99C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED130322824765F00EB99C7 /* SceneDelegate.swift */; };
+		9ED1303A2824766100EB99C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED130392824766100EB99C7 /* Assets.xcassets */; };
+		9ED1303D2824766100EB99C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED1303B2824766100EB99C7 /* LaunchScreen.storyboard */; };
+		9ED130552824786500EB99C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED130542824786500EB99C7 /* ProfileViewController.swift */; };
+		9ED1305A2824983400EB99C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED130592824983400EB99C7 /* GoogleService-Info.plist */; };
+		9ED9E21B2833B65D00EC86AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B01CB6CB82F8A179E5FD2A6 /* Pods-RingoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingoTalk.debug.xcconfig"; path = "Target Support Files/Pods-RingoTalk/Pods-RingoTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		6565C6BEF6221D8DDA00240C /* Pods_RingoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E14A361282A4A7D002918D8 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		9E51E112282A09C900D8D14B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9E51E114282A09E700D8D14B /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		9E51E116282A105B00D8D14B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9E61E6E7282B7F7A0004A49C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9E61E6EE282BB68C0004A49C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9E61E6F2282BDE5A0004A49C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9EC1A4012829E36D00F22133 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		9EC1A4032829E3AA00F22133 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		9EC1A4052829E9FE00F22133 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9EC1A4072829EED700F22133 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		9ECF93482832782900F75134 /* FMessageListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMessageListener.swift; sourceTree = "<group>"; };
+		9ECF934A2832782900F75134 /* FTypingListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTypingListener.swift; sourceTree = "<group>"; };
+		9ECF934B2832782900F75134 /* FUserListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUserListener.swift; sourceTree = "<group>"; };
+		9ECF934C2832782900F75134 /* FChatRoomListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FChatRoomListener.swift; sourceTree = "<group>"; };
+		9ECF934D2832782A00F75134 /* FCollectionReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		9ECF934E2832782A00F75134 /* FireStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireStorage.swift; sourceTree = "<group>"; };
+		9ECF9359283279AE00F75134 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9ECF935A283279AE00F75134 /* StartChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartChat.swift; sourceTree = "<group>"; };
+		9ECF935C283279AE00F75134 /* GlobalFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunction.swift; sourceTree = "<group>"; };
+		9ECF9387283289CF00F75134 /* AudioMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMessage.swift; sourceTree = "<group>"; };
+		9ECF9388283289CF00F75134 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		9ECF9389283289D000F75134 /* LocationMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMessage.swift; sourceTree = "<group>"; };
+		9ECF938A283289D000F75134 /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		9ECF938B283289D000F75134 /* PhotoMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMessage.swift; sourceTree = "<group>"; };
+		9ECF938C283289D000F75134 /* Outgoing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outgoing.swift; sourceTree = "<group>"; };
+		9ECF938D283289D000F75134 /* VideoMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMessage.swift; sourceTree = "<group>"; };
+		9ECF938E283289D000F75134 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9ECF938F283289D000F75134 /* BasicAudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAudioController.swift; sourceTree = "<group>"; };
+		9ECF9390283289D100F75134 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9ECF9391283289D100F75134 /* PushNotificationSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
+		9ECF9392283289D100F75134 /* MKSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSender.swift; sourceTree = "<group>"; };
+		9ECF9393283289D100F75134 /* LocalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMessage.swift; sourceTree = "<group>"; };
+		9ECF9394283289D100F75134 /* MKMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMessage.swift; sourceTree = "<group>"; };
+		9ECF9395283289D100F75134 /* PushNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		9ECF9396283289D100F75134 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		9ECF9397283289D200F75134 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		9ECF9398283289D200F75134 /* Incoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incoming.swift; sourceTree = "<group>"; };
+		9ECF9399283289D200F75134 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		9ECF93AD2832946F00F75134 /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
+		9ECF93B0283296C300F75134 /* MessagessDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagessDataSource.swift; sourceTree = "<group>"; };
+		9ECF93B1283296C300F75134 /* MessageCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCellDelegate.swift; sourceTree = "<group>"; };
+		9ECF93B2283296C300F75134 /* MessagesDisplayDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesDisplayDelegate.swift; sourceTree = "<group>"; };
+		9ECF93B3283296C300F75134 /* InputBarAccessoryViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBarAccessoryViewDelegate.swift; sourceTree = "<group>"; };
+		9ECF93B4283296C300F75134 /* MessagesLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesLayoutDelegate.swift; sourceTree = "<group>"; };
+		9ECF93BA28329D6300F75134 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		9ED1302D2824765E00EB99C7 /* RingoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED130302824765F00EB99C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9ED130322824765F00EB99C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9ED130392824766100EB99C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED1303C2824766100EB99C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ED1303E2824766100EB99C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED130542824786500EB99C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9ED130592824983400EB99C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9ED1305D2824DD2A00EB99C7 /* RingoTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingoTalk.entitlements; sourceTree = "<group>"; };
+		9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F8DED92A8A37323CE2154E7A /* Pods-RingoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingoTalk.release.xcconfig"; path = "Target Support Files/Pods-RingoTalk/Pods-RingoTalk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED1302A2824765E00EB99C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F11103805A2703D1F7CB224 /* Pods_RingoTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FE07B3DBE8CA50911C5ACB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6565C6BEF6221D8DDA00240C /* Pods_RingoTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28D38D9AD3D6DFFD6F3BA50A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B01CB6CB82F8A179E5FD2A6 /* Pods-RingoTalk.debug.xcconfig */,
+				F8DED92A8A37323CE2154E7A /* Pods-RingoTalk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EC1A4092829EEF000F22133 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1A4052829E9FE00F22133 /* UIColor+Extension.swift */,
+				9E51E112282A09C900D8D14B /* UIView+Extension.swift */,
+				9E51E114282A09E700D8D14B /* Notification+Extension.swift */,
+				9E61E6EE282BB68C0004A49C /* UIViewController+Extension.swift */,
+				9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9EC5517A2833D942006D843D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9E61E6F2282BDE5A0004A49C /* LoginViewController.swift */,
+				9E51E116282A105B00D8D14B /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9EC5E588283472C000B90663 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF93AD2832946F00F75134 /* ChatListTableViewCell.swift */,
+				9ECF93BA28329D6300F75134 /* UserListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9EC5E589283472D700B90663 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF9387283289CF00F75134 /* AudioMessage.swift */,
+				9ECF938A283289D000F75134 /* AudioRecorder.swift */,
+				9ECF938F283289D000F75134 /* BasicAudioController.swift */,
+				9ECF9389283289D000F75134 /* LocationMessage.swift */,
+				9ECF9396283289D100F75134 /* MapAnnotation.swift */,
+				9ECF938E283289D000F75134 /* LocationManager.swift */,
+				9ECF938B283289D000F75134 /* PhotoMessage.swift */,
+				9ECF938D283289D000F75134 /* VideoMessage.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		9EC5E58A2834732800B90663 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF9395283289D100F75134 /* PushNotificationManager.swift */,
+				9ECF9391283289D100F75134 /* PushNotificationSender.swift */,
+			);
+			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		9ECF93472832782900F75134 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF93482832782900F75134 /* FMessageListener.swift */,
+				9ECF934A2832782900F75134 /* FTypingListener.swift */,
+				9ECF934B2832782900F75134 /* FUserListener.swift */,
+				9ECF934C2832782900F75134 /* FChatRoomListener.swift */,
+				9ECF934D2832782A00F75134 /* FCollectionReference.swift */,
+				9ECF934E2832782A00F75134 /* FireStorage.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		9ECF9358283279AE00F75134 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF9359283279AE00F75134 /* Constants.swift */,
+				9ECF935A283279AE00F75134 /* StartChat.swift */,
+				9ECF935C283279AE00F75134 /* GlobalFunction.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9ECF93AF2832969A00F75134 /* ChatRoomVC+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1A4072829EED700F22133 /* ChatRoomViewController.swift */,
+				9ECF93B3283296C300F75134 /* InputBarAccessoryViewDelegate.swift */,
+				9ECF93B1283296C300F75134 /* MessageCellDelegate.swift */,
+				9ECF93B2283296C300F75134 /* MessagesDisplayDelegate.swift */,
+				9ECF93B4283296C300F75134 /* MessagesLayoutDelegate.swift */,
+				9ECF93B0283296C300F75134 /* MessagessDataSource.swift */,
+			);
+			path = "ChatRoomVC+Extension";
+			sourceTree = "<group>";
+		};
+		9ED130242824765E00EB99C7 = {
+			isa = PBXGroup;
+			children = (
+				9ED1302F2824765E00EB99C7 /* RingoTalk */,
+				9ED1302E2824765E00EB99C7 /* Products */,
+				28D38D9AD3D6DFFD6F3BA50A /* Pods */,
+				1FE07B3DBE8CA50911C5ACB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED1302E2824765E00EB99C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ED1302D2824765E00EB99C7 /* RingoTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ED1302F2824765E00EB99C7 /* RingoTalk */ = {
+			isa = PBXGroup;
+			children = (
+				9ED1305D2824DD2A00EB99C7 /* RingoTalk.entitlements */,
+				9ED130592824983400EB99C7 /* GoogleService-Info.plist */,
+				9ECF9358283279AE00F75134 /* Helpers */,
+				9ECF93472832782900F75134 /* Firebase */,
+				9EC1A4092829EEF000F22133 /* Extensions */,
+				9ED130482824770A00EB99C7 /* Resources */,
+				9ED13046282476FE00EB99C7 /* Models */,
+				9ED13045282476F800EB99C7 /* Views */,
+				9ED13044282476EF00EB99C7 /* Controllers */,
+				9ED1303E2824766100EB99C7 /* Info.plist */,
+			);
+			path = RingoTalk;
+			sourceTree = "<group>";
+		};
+		9ED13044282476EF00EB99C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5517A2833D942006D843D /* Login */,
+				9ECF93AF2832969A00F75134 /* ChatRoomVC+Extension */,
+				9E61E6E7282B7F7A0004A49C /* LocationViewController.swift */,
+				9ED130542824786500EB99C7 /* ProfileViewController.swift */,
+				9EC1A4032829E3AA00F22133 /* ChatListViewController.swift */,
+				9E14A361282A4A7D002918D8 /* UserListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9ED13045282476F800EB99C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5E588283472C000B90663 /* Cells */,
+				9ED130492824772900EB99C7 /* Storyboards */,
+				9ED130392824766100EB99C7 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ED13046282476FE00EB99C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EC5E589283472D700B90663 /* Media */,
+				9EC5E58A2834732800B90663 /* PushNotification */,
+				9ECF9399283289D200F75134 /* Channel.swift */,
+				9ECF9397283289D200F75134 /* ChatRoom.swift */,
+				9ECF9398283289D200F75134 /* Incoming.swift */,
+				9ECF9393283289D100F75134 /* LocalMessage.swift */,
+				9ECF9394283289D100F75134 /* MKMessage.swift */,
+				9ECF9392283289D100F75134 /* MKSender.swift */,
+				9ECF938C283289D000F75134 /* Outgoing.swift */,
+				9ECF9388283289CF00F75134 /* RealmManager.swift */,
+				9ECF9390283289D100F75134 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9ED130482824770A00EB99C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ED130302824765F00EB99C7 /* AppDelegate.swift */,
+				9ED130322824765F00EB99C7 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ED130492824772900EB99C7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1A4012829E36D00F22133 /* Chat.storyboard */,
+				9ED1303B2824766100EB99C7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED1302C2824765E00EB99C7 /* RingoTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED130412824766100EB99C7 /* Build configuration list for PBXNativeTarget "RingoTalk" */;
+			buildPhases = (
+				EA1DBDCDA2F1CD9B684540FC /* [CP] Check Pods Manifest.lock */,
+				9ED130292824765E00EB99C7 /* Sources */,
+				9ED1302A2824765E00EB99C7 /* Frameworks */,
+				9ED1302B2824765E00EB99C7 /* Resources */,
+				79027C530F9D7CBCFCE06E58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingoTalk;
+			productName = Messanger;
+			productReference = 9ED1302D2824765E00EB99C7 /* RingoTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ED130252824765E00EB99C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9ED1302C2824765E00EB99C7 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9ED130282824765E00EB99C7 /* Build configuration list for PBXProject "RingoTalk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ED130242824765E00EB99C7;
+			productRefGroup = 9ED1302E2824765E00EB99C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ED1302C2824765E00EB99C7 /* RingoTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ED1302B2824765E00EB99C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED1303D2824766100EB99C7 /* LaunchScreen.storyboard in Resources */,
+				9ED1305A2824983400EB99C7 /* GoogleService-Info.plist in Resources */,
+				9ED1303A2824766100EB99C7 /* Assets.xcassets in Resources */,
+				9EC1A4022829E36D00F22133 /* Chat.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79027C530F9D7CBCFCE06E58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RingoTalk/Pods-RingoTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RingoTalk/Pods-RingoTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RingoTalk/Pods-RingoTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1DBDCDA2F1CD9B684540FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RingoTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ED130292824765E00EB99C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E51E113282A09C900D8D14B /* UIView+Extension.swift in Sources */,
+				9E61E6F3282BDE5B0004A49C /* LoginViewController.swift in Sources */,
+				9ECF93AB283289D200F75134 /* Incoming.swift in Sources */,
+				9ECF93A8283289D200F75134 /* PushNotificationManager.swift in Sources */,
+				9ECF939E283289D200F75134 /* PhotoMessage.swift in Sources */,
+				9EC1A4042829E3AA00F22133 /* ChatListViewController.swift in Sources */,
+				9ECF93AE2832946F00F75134 /* ChatListTableViewCell.swift in Sources */,
+				9ECF934F2832782A00F75134 /* FMessageListener.swift in Sources */,
+				9ECF93B6283296C400F75134 /* MessageCellDelegate.swift in Sources */,
+				9ED9E21B2833B65D00EC86AE /* Date+Extension.swift in Sources */,
+				9ECF93A6283289D200F75134 /* LocalMessage.swift in Sources */,
+				9E51E117282A105B00D8D14B /* SignUpViewController.swift in Sources */,
+				9EC1A4062829E9FE00F22133 /* UIColor+Extension.swift in Sources */,
+				9ECF93A7283289D200F75134 /* MKMessage.swift in Sources */,
+				9ECF93512832782A00F75134 /* FTypingListener.swift in Sources */,
+				9ECF93522832782A00F75134 /* FUserListener.swift in Sources */,
+				9ECF93AC283289D200F75134 /* Channel.swift in Sources */,
+				9ECF93A0283289D200F75134 /* VideoMessage.swift in Sources */,
+				9ECF93B7283296C400F75134 /* MessagesDisplayDelegate.swift in Sources */,
+				9ECF93A9283289D200F75134 /* MapAnnotation.swift in Sources */,
+				9ECF939F283289D200F75134 /* Outgoing.swift in Sources */,
+				9ECF935D283279AE00F75134 /* Constants.swift in Sources */,
+				9ED130312824765F00EB99C7 /* AppDelegate.swift in Sources */,
+				9ECF93A3283289D200F75134 /* User.swift in Sources */,
+				9ECF93AA283289D200F75134 /* ChatRoom.swift in Sources */,
+				9E61E6E8282B7F7A0004A49C /* LocationViewController.swift in Sources */,
+				9ECF93A1283289D200F75134 /* LocationManager.swift in Sources */,
+				9ECF93B5283296C300F75134 /* MessagessDataSource.swift in Sources */,
+				9ECF939D283289D200F75134 /* AudioRecorder.swift in Sources */,
+				9ED130552824786500EB99C7 /* ProfileViewController.swift in Sources */,
+				9E61E6EF282BB68C0004A49C /* UIViewController+Extension.swift in Sources */,
+				9ED130332824765F00EB99C7 /* SceneDelegate.swift in Sources */,
+				9ECF93BB28329D6300F75134 /* UserListTableViewCell.swift in Sources */,
+				9ECF939B283289D200F75134 /* RealmManager.swift in Sources */,
+				9ECF93542832782A00F75134 /* FCollectionReference.swift in Sources */,
+				9ECF93B8283296C400F75134 /* InputBarAccessoryViewDelegate.swift in Sources */,
+				9ECF93532832782A00F75134 /* FChatRoomListener.swift in Sources */,
+				9ECF939A283289D200F75134 /* AudioMessage.swift in Sources */,
+				9E51E115282A09E700D8D14B /* Notification+Extension.swift in Sources */,
+				9E14A362282A4A7D002918D8 /* UserListViewController.swift in Sources */,
+				9ECF93B9283296C400F75134 /* MessagesLayoutDelegate.swift in Sources */,
+				9ECF9360283279AE00F75134 /* GlobalFunction.swift in Sources */,
+				9EC1A4082829EED700F22133 /* ChatRoomViewController.swift in Sources */,
+				9ECF93A4283289D200F75134 /* PushNotificationSender.swift in Sources */,
+				9ECF935E283279AE00F75134 /* StartChat.swift in Sources */,
+				9ECF93A2283289D200F75134 /* BasicAudioController.swift in Sources */,
+				9ECF939C283289D200F75134 /* LocationMessage.swift in Sources */,
+				9ECF93552832782A00F75134 /* FireStorage.swift in Sources */,
+				9ECF93A5283289D200F75134 /* MKSender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9ED1303B2824766100EB99C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ED1303C2824766100EB99C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ED1303F2824766100EB99C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ED130402824766100EB99C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ED130422824766100EB99C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B01CB6CB82F8A179E5FD2A6 /* Pods-RingoTalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RingoTalk/RingoTalk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PCGV2BY5QK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RingoTalk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "$(PRODUCT_NAME) needs your location ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "$(PRODUCT_NAME) needs your location ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to send audio and video messages.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Chat;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotsuya.test.RingoTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ED130432824766100EB99C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DED92A8A37323CE2154E7A /* Pods-RingoTalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RingoTalk/RingoTalk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PCGV2BY5QK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RingoTalk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "$(PRODUCT_NAME) needs your location ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "$(PRODUCT_NAME) needs your location ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to send audio and video messages.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Chat;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotsuya.test.RingoTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ED130282824765E00EB99C7 /* Build configuration list for PBXProject "RingoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED1303F2824766100EB99C7 /* Debug */,
+				9ED130402824766100EB99C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED130412824766100EB99C7 /* Build configuration list for PBXNativeTarget "RingoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED130422824766100EB99C7 /* Debug */,
+				9ED130432824766100EB99C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ED130252824765E00EB99C7 /* Project object */;
+}

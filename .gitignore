@@ -18,8 +18,8 @@ DerivedData
 # GoogleService-Info.plist
 
 # CocoaPod
-/Pods/*
-/Podfile.lock
+./Pods/*
+./Podfile.lock
 
 # others
 *.swp

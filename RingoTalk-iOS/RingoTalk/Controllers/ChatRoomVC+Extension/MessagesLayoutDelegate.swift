@@ -7,6 +7,7 @@
 
 import Foundation
 import MessageKit
+import SDWebImage
 
 extension ChatRoomViewController: MessagesLayoutDelegate {
     
@@ -37,6 +38,12 @@ extension ChatRoomViewController: MessagesLayoutDelegate {
     // MARK: - Avatar initials
     
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
-        avatarView.set(avatar: Avatar(initials: mkMessages[indexPath.section].senderInitials))
+        
+        let mkMessage = mkMessages[indexPath.section]
+        let senderId = mkMessage.mkSender.senderId
+        FileStorage.downloadImage(imageUrl: senderId) { avatarImage in
+            let avatar = Avatar(image: avatarImage, initials: mkMessage.senderInitials)
+            avatarView.set(avatar: avatar)
+        }
     }
 }

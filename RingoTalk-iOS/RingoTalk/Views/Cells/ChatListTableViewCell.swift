@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ChatListTableViewCell: UITableViewCell {
     
@@ -47,9 +48,9 @@ class ChatListTableViewCell: UITableViewCell {
         }
         
         if !chatRoom.avatarLink.isEmpty {
-            FileStorage.downloadImage(imageUrl: chatRoom.avatarLink) { [weak self] avatarImage in
-                self?.avatarImageView.image = avatarImage
-            }
+            guard let imageUrl = URL(string: chatRoom.avatarLink) else { return }
+            avatarImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+            avatarImageView.sd_setImage(with: imageUrl)
         } else {
             avatarImageView.image = UIImage(systemName: "person.circle")
         }

@@ -26,6 +26,7 @@ class MKMessage: NSObject, MessageType {
     var videoItem: VideoMessage?
     var locationItem: LocationMessage?
     var audioItem: AudioMessage?
+    var linkItem: LinkItem?
     
     init(message: LocalMessage) {
         self.messageId = message.id
@@ -50,14 +51,19 @@ class MKMessage: NSObject, MessageType {
             self.kind = MessageKind.video(videoItem)
             self.videoItem = videoItem
         case kLOCATION:
-            let locationItem = LocationMessage(location: CLLocation(latitude: message.latitude,
-                                                                    longitude: message.longitude))
+            let location = CLLocation(latitude: message.latitude,
+                                      longitude: message.longitude)
+            let locationItem = LocationMessage(location: location)
             self.kind = MessageKind.location(locationItem)
             self.locationItem = locationItem
         case kAUDIO:
             let audioItem = AudioMessage(duration: 2.0)
             self.kind = MessageKind.audio(audioItem)
             self.audioItem = audioItem
+        case kLINKPREVIEW:
+            let linkItem = LinkMessage(urlString: message.message)
+            self.kind = MessageKind.linkPreview(linkItem)
+            self.linkItem = linkItem
         default:
             self.kind = MessageKind.text(message.message)
             print("unknown mkMessage type")

@@ -61,6 +61,7 @@
 		9ED130552824786500EB99C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED130542824786500EB99C7 /* ProfileViewController.swift */; };
 		9ED1305A2824983400EB99C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED130592824983400EB99C7 /* GoogleService-Info.plist */; };
 		9ED9E21B2833B65D00EC86AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */; };
+		9EEB11E9283629EB004966AF /* LinkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB11E8283629EA004966AF /* LinkMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		9ED130592824983400EB99C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9ED1305D2824DD2A00EB99C7 /* RingoTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingoTalk.entitlements; sourceTree = "<group>"; };
 		9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9EEB11E8283629EA004966AF /* LinkMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMessage.swift; sourceTree = "<group>"; };
 		F8DED92A8A37323CE2154E7A /* Pods-RingoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingoTalk.release.xcconfig"; path = "Target Support Files/Pods-RingoTalk/Pods-RingoTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +197,7 @@
 				9ECF938E283289D000F75134 /* LocationManager.swift */,
 				9ECF938B283289D000F75134 /* PhotoMessage.swift */,
 				9ECF938D283289D000F75134 /* VideoMessage.swift */,
+				9EEB11E8283629EA004966AF /* LinkMessage.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				9ECF93512832782A00F75134 /* FTypingListener.swift in Sources */,
 				9ECF93522832782A00F75134 /* FUserListener.swift in Sources */,
 				9ECF93AC283289D200F75134 /* Channel.swift in Sources */,
+				9EEB11E9283629EB004966AF /* LinkMessage.swift in Sources */,
 				9ECF93A0283289D200F75134 /* VideoMessage.swift in Sources */,
 				9ECF93B7283296C400F75134 /* MessagesDisplayDelegate.swift in Sources */,
 				9ECF93A9283289D200F75134 /* MapAnnotation.swift in Sources */,

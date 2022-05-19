@@ -10,6 +10,7 @@ import MessageKit
 import AVFoundation
 import AVKit
 import SKPhotoBrowser
+import SafariServices
 
 extension ChatRoomViewController: MessageCellDelegate {
     
@@ -48,6 +49,12 @@ extension ChatRoomViewController: MessageCellDelegate {
                 let coordinates = locationItem.location.coordinate
                 let vc = LocationViewController(coordinates: coordinates, viewType: .viewer)
                 vc.title = "Location"
+                navigationController?.pushViewController(vc, animated: true)
+            }
+            
+            if let linkItem = mkMessage.linkItem {
+                let vc = SFSafariViewController(url: linkItem.url)
+                vc.hidesBottomBarWhenPushed = true
                 navigationController?.pushViewController(vc, animated: true)
             }
         }

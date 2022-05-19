@@ -31,7 +31,11 @@ class Outgoing {
         
         // 2. Check message type
         if let text = text {
-            sendText(message: message, text: text, memberIds: memberIds)
+            if text.hasPrefix("https://") {
+                sendlinkPreview(message: message, text: text, memberIds: memberIds)
+            } else {
+                sendText(message: message, text: text, memberIds: memberIds)
+            }
         }
         
         if let photo = photo {
@@ -65,7 +69,13 @@ class Outgoing {
     }
 }
 
-
+func sendlinkPreview(message: LocalMessage, text: String, memberIds: [String], channel: Channel? = nil) {
+    
+    message.message = text
+    message.type = kLINKPREVIEW
+    
+    Outgoing.saveMessage(message: message, memberIds: memberIds)
+}
 
 func sendText(message: LocalMessage, text: String, memberIds: [String], channel: Channel? = nil) {
     

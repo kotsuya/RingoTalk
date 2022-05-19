@@ -25,6 +25,7 @@ public let kPHOTO = "photo"
 public let kVIDEO = "video"
 public let kAUDIO = "audio"
 public let kLOCATION = "location"
+public let kLINKPREVIEW = "linkPreview"
 
 public let kDATE = "date"
 public let kNUMBEROFMESSAGES = 12

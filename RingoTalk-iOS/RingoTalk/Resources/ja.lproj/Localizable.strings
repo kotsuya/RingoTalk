@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  RingoTalk
+
+  Created by Yoo on 2022/05/20.
+  
+*/
+
+"Camera" = "カメラ";
+"Library" = "ライブラリ";
+"Show Location" = "場所を表示";
+"Cancel" = "キャンセル";
+
+"Send" = "送る";

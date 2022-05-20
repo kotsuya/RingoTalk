@@ -77,7 +77,7 @@ class LocationViewController: UIViewController {
         
         switch viewType {
         case .editer:
-            let sendButton = UIBarButtonItem(title: "Send",
+            let sendButton = UIBarButtonItem(title: "Send".localized,
                                              style: .done,
                                              target: self,
                                              action: #selector(tappedSendButton))

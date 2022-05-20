@@ -61,6 +61,8 @@
 		9ED130552824786500EB99C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED130542824786500EB99C7 /* ProfileViewController.swift */; };
 		9ED1305A2824983400EB99C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED130592824983400EB99C7 /* GoogleService-Info.plist */; };
 		9ED9E21B2833B65D00EC86AE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */; };
+		9EE2CD09283716F40014B856 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2CD08283716F40014B856 /* String+Extension.swift */; };
+		9EE2CD0C283717360014B856 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2CD0E283717360014B856 /* Localizable.strings */; };
 		9EEB11E9283629EB004966AF /* LinkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB11E8283629EA004966AF /* LinkMessage.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,9 @@
 		9ED130592824983400EB99C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9ED1305D2824DD2A00EB99C7 /* RingoTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingoTalk.entitlements; sourceTree = "<group>"; };
 		9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9EE2CD08283716F40014B856 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9EE2CD0D283717360014B856 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9EE2CD0F283717A70014B856 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9EEB11E8283629EA004966AF /* LinkMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMessage.swift; sourceTree = "<group>"; };
 		F8DED92A8A37323CE2154E7A /* Pods-RingoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingoTalk.release.xcconfig"; path = "Target Support Files/Pods-RingoTalk/Pods-RingoTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +169,7 @@
 				9E51E114282A09E700D8D14B /* Notification+Extension.swift */,
 				9E61E6EE282BB68C0004A49C /* UIViewController+Extension.swift */,
 				9ED9E21A2833B65D00EC86AE /* Date+Extension.swift */,
+				9EE2CD08283716F40014B856 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			children = (
 				9ED130302824765F00EB99C7 /* AppDelegate.swift */,
 				9ED130322824765F00EB99C7 /* SceneDelegate.swift */,
+				9EE2CD0E283717360014B856 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -385,6 +392,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 9ED130242824765E00EB99C7;
 			productRefGroup = 9ED1302E2824765E00EB99C7 /* Products */;
@@ -401,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE2CD0C283717360014B856 /* Localizable.strings in Resources */,
 				9ED1303D2824766100EB99C7 /* LaunchScreen.storyboard in Resources */,
 				9ED1305A2824983400EB99C7 /* GoogleService-Info.plist in Resources */,
 				9ED1303A2824766100EB99C7 /* Assets.xcassets in Resources */,
@@ -482,6 +491,7 @@
 				9ECF935D283279AE00F75134 /* Constants.swift in Sources */,
 				9ED130312824765F00EB99C7 /* AppDelegate.swift in Sources */,
 				9ECF93A3283289D200F75134 /* User.swift in Sources */,
+				9EE2CD09283716F40014B856 /* String+Extension.swift in Sources */,
 				9ECF93AA283289D200F75134 /* ChatRoom.swift in Sources */,
 				9E61E6E8282B7F7A0004A49C /* LocationViewController.swift in Sources */,
 				9ECF93A1283289D200F75134 /* LocationManager.swift in Sources */,
@@ -519,6 +529,15 @@
 				9ED1303C2824766100EB99C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9EE2CD0E283717360014B856 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EE2CD0D283717360014B856 /* en */,
+				9EE2CD0F283717A70014B856 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

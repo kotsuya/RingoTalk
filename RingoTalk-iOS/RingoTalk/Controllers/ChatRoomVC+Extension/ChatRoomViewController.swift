@@ -100,7 +100,7 @@ class ChatRoomViewController: MessagesViewController {
         
         navigationItem.largeTitleDisplayMode = .never
         
-        print("akb::Realm Path::\(Realm.Configuration.defaultConfiguration.fileURL!)")
+        //print("akb::Realm Path::\(Realm.Configuration.defaultConfiguration.fileURL!)")
     }
     
     private func configureMSGCollectionView() {
@@ -264,19 +264,19 @@ class ChatRoomViewController: MessagesViewController {
         
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        let takePhotoOrVideo = UIAlertAction(title: "Camera", style: .default) { [weak self] _ in
+        let takePhotoOrVideo = UIAlertAction(title: "Camera".localized, style: .default) { [weak self] _ in
             self?.showImageGallery(camera: true)
         }
         
-        let shareMedia = UIAlertAction(title: "Library", style: .default) { [weak self] _ in
+        let shareMedia = UIAlertAction(title: "Library".localized, style: .default) { [weak self] _ in
             self?.showImageGallery(camera: false)
         }
         
-        let shareLocation = UIAlertAction(title: "Show Location", style: .default) { [weak self] _ in
+        let shareLocation = UIAlertAction(title: "Show Location".localized, style: .default) { [weak self] _ in
             self?.showLocation()
         }
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { action in
+        let cancel = UIAlertAction(title: "Cancel".localized, style: .cancel) { action in
         }
         
         takePhotoOrVideo.setValue(UIImage(systemName: "camera"), forKey: "image")
